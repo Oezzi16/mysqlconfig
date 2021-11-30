@@ -1,0 +1,15 @@
+import mysql large .sql tuneup configuration
+
+max_allowed_packet=512M
+innodb_file_per_table
+innodb_flush_method=O_DIRECT
+innodb_log_file_size=250M
+innodb_buffer_pool_size=1G
+innodb_write_io_threads = 16
+innodb_flush_log_at_trx_commit = 0
+innodb_doublewrite = 0
+#innodb_force_recovery = 1
+innodb_fast_shutdown = 0
+
+[mysqldump]
+max_allowed_packet=512M
